@@ -1,9 +1,7 @@
 # Project description
 In this project, we fine-tune transfer learning model to classify pictured dishes into 101 classes. The main objective is to beat the performance of [DeepFood](https://www.researchgate.net/publication/304163308_DeepFood_Deep_Learning-Based_Food_Image_Recognition_for_Computer-Aided_Dietary_Assessment) paper using fine-tuning and sharpness minimization techniques. See the data at [`food101`](https://www.tensorflow.org/datasets/catalog/food101) (dataset comprised of 75000 train and 25000 test images). 
 
-T
-
-he notebook convers 5 different experiments involving transfer learning, fine-tuning, data augmentation, sharpness aware minimization, and techniques to reduce uncertainity. Below are the steps of the project.
+The notebook convers 5 different experiments involving transfer learning, fine-tuning, data augmentation, sharpness aware minimization, and techniques to reduce uncertainity. Below are the steps of the project.
 
   1. Use TensorFlow Datasets ([tfds.laod](https://www.tensorflow.org/datasets/api_docs/python/tfds/load)) to download and explore data
   2. Creating preprocessing function for our data
