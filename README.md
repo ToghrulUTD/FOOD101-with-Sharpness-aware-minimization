@@ -3,14 +3,14 @@ In this project, we fine-tune transfer learning model to classify pictured dishe
 
 T
 
-he notebook convers 5 different experiments involving transfer learning, fine-tuning, data augmentation, sharpness aware minimization, and stochastic predictions. Below are the steps of the project.
+he notebook convers 5 different experiments involving transfer learning, fine-tuning, data augmentation, sharpness aware minimization, and techniques to reduce uncertainity. Below are the steps of the project.
 
   1. Use TensorFlow Datasets ([tfds.laod](https://www.tensorflow.org/datasets/api_docs/python/tfds/load)) to download and explore data
   2. Creating preprocessing function for our data
   3. Create data pipeline with tf.data (making our datasets run fast with [tf.data API](https://www.tensorflow.org/guide/data_performance))
   4.  Define TensorBoard and Model Checkpoint, Early Stopping, Learning Rate callbacks
   5. Setting up [Mixed Precision](https://www.tensorflow.org/guide/mixed_precision) policy for fast training 
-  6. Loading a feature extraction Transfer Learning Model ([ResNetRS200](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet_rs/ResNetRS200)), adding image preprocessing layers, top layers target task
+  6. Building and customizing RESNET model.
   7. Fine-tuning the feature extractor - experiment models with and without the ideas outlined in [MCdropout](https://arxiv.org/abs/1506.02142) and [Sharpness Aware Minimization](https://arxiv.org/abs/2010.01412).
     * Stochastic predictions with MCdropout
     * Sharpness aware minimization for better generalization
